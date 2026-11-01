@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<body style="font-family:georgia;">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooGrozny</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Главный контейнер делит экран ровно на 2 половины */
+        .tilda-hero {
+            display: flex;
+            width: 100%;
+            height: 100vh; /* Занимает всю высоту экрана */
+            background-color: #ffffff;
+        }
+
+        /* ЛЕВАЯ ПОЛОВИНА: Картинка */
+        .tilda-left-img {
+            width: 50%; /* Ровно половина ширины */
+            height: 100%;
+            /* Вставьте сюда СВОЮ ссылку на картинку вместо этой: */
+            background-image: url(https://yaart-images.s3.yandex.net/webalice/editing_result_8209b29ad55111f18e6502f5c34e7170:1); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* ПРАВАЯ ПОЛОВИНА: Контент */
+        .tilda-right-content {
+            width: 50%; /* Ровно половина ширины */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрирует текст по вертикали */
+            align-items: flex-start; /* Выравнивает текст по левому краю внутри своей половины */
+            padding: 0 10%; /* Отступы от краев, чтобы текст не прижимался к границам */
+        }
+
+        .tilda-title {
+            font-size: 42px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .tilda-text {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        /* Кнопка-ссылка */
+        .tilda-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: green; /* Зелёный цвет кнопки */
+            color: #ffffff; /* Белый текст */
+            text-decoration: none; /* Убирает подчеркивание ссылки */
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* Эффект при наведении на кнопку */
+        .tilda-btn:hover {
+            background-color:darkgreen;
+        }
+    </style>
+</head>
+<body style="font-family:georgia">
+
+    <section class="tilda-hero">
+        
+        <!-- Левая половина с картинкой -->
+        <div class="tilda-left-img"></div>
+        
+        <!-- Правая половина с текстом и кнопкой -->
+        <div class="tilda-right-content">
+            <h1 class="tilda-title">ZooGrozny</h1>
+            <p class="tilda-text">Лучший зоопарк в Грозном!</p>
+            <p class="tilda-text">Узнайте о многих животных, а еще какой у них характер к людям в нашем зоопарке "ZooGrozny"</p>
+            
+            <!-- Кнопка-ссылка. В атрибут href='...' вставьте нужный адрес сайта вместо '#' -->
+            <a href="#imba" class="tilda-btn">Подробнее</a>
+        </div>
+
+    </section>
+    </body>
+</html>
+<div class="services-container">
+  <!-- Карточка 1 -->
+  <div class="service-card">
+    <div class="service-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+        <circle cx="12" cy="12" r="10" fill="#000000"/>
+        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Есть разные животные со всего мира!</h3>
+    <p class="service-desc">Самые удивительные животные со всей галактики у нас!</p>
+    <a href="#order" class="service-btn">Понравилось😍</a>
+  </div>
+
+  <!-- Карточка 2 -->
+  <div class="service-card featured">
+    <div class="service-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+        <circle cx="12" cy="12" r="10" fill="#ff8c00"/>
+        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Намаз</h3>
+    <p class="service-desc">Пришли и не сделали намаз,а скоро следующий?Специально для вас у нас есть большая комната для намаза с коврами,а также платья для намаза что бы можно было сделать намаз женщинам тоже!</p>
+    <a href="#order" class="service-btn">Понравилось😍</a>
+  </div>
+
+  <!-- Карточка 3 -->
+  <div class="service-card">
+    <div class="service-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+        <circle cx="12" cy="12" r="10" fill="#000000"/>
+        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3 class="service-title">Кафе</h3>
+    <p class="service-desc">Устали ходить по зоопарку?Не проблема у нас есть кафе,где большой ассортимент,а если ребенку не сидится у нас есть телевизоры с разными мультфильмами!</p>
+    <a href="#order" class="service-btn">Понравилось😍</a>
+  </div>
+</div>
+
+<style>
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.service-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Выделение центральной карточки (по желанию) */
+.service-card.featured {
+  border-color: #ff8c00;
+  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.1);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 22px;
+  margin: 0 0 15px 0;
+  color: #222222;
+}
+
+.service-desc {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.service-btn {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.service-card.featured .service-btn {
+  background-color: #ff8c00;
+}
+
+.service-btn:hover {
+  opacity: 0.9;
+}
+
+/* Адаптив под мобилки */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+</style>
+<style>
+/* Стиль, который покрасит кнопку в розово-красный цвет при клике */
+.service-btn.clicked {
+  background-color: #ff2d55 !important; /* Насыщенный розово-красный цвет */
+  border-color: #ff2d55 !important;
+  color: #ffffff !important;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Находим все твои кнопки с классом "service-btn" ("Понравилось")
+  var buttons = document.querySelectorAll('.service-btn');
+  
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function(e) {
+      // Отменяем стандартный переход по ссылке #order, чтобы страница не дергалась
+      e.preventDefault();
+      
+      // Переключаем класс clicked (нажал — стала розовой, нажал еще раз — вернулся исходный цвет)
+      this.classList.toggle('clicked');
+    });
+  });
+});
+</script>
+<div id="imba" style="text-align: center; font-family: Arial, sans-serif; font-weight: bold; color: #000000;border-top:20px solid green;border-bottom:20px solid green;background-color:white;">
+    <h1>Какие животные у нас есть?</h1>
+    <h2 style="font-size: 28px; margin-bottom: 15px;">Дикие кошачьи</h2>
+    <ul style="list-style-type: disc; list-style-position: inside; padding: 0; font-size: 22px; margin-bottom: 30px;">
+        <li>Амурский тигр</li>
+        <li>Африканский лев</li>
+        <li>Ягуар</li>
+        <li>Леопард</li>
+        <li>Гепард</li>
+        <li>Пума</li>
+        <li>Рысь</li>
+        <li>Манул</li>
+        <li>Каракал</li>
+        <li>Сервал</li>
+    </ul>
+
+    <h2 style="font-size: 28px; margin-bottom: 15px;">Дикие псовые</h2>
+    <ul style="list-style-type: disc; list-style-position: inside; padding: 0; font-size: 22px;">
+        <li>Волк</li>
+        <li>Лисица</li>
+        <li>Шакал</li>
+        <li>Койот</li>
+        <li>Енотовидная собака</li>
+        <li>Гиеновидная собака</li>
+        <li>Динго</li>
+        <li>Песец</li>
+    </ul>
+    <p style="text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; color: #000000; margin-top: 30px;">
+        И многие другие!
+    </p>
+    <img src="https://media.istockphoto.com/id/935702298/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D1%81%D0%B8%D0%BC%D0%BF%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8-%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85-%D1%81%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D1%85%D0%BE%D0%B7%D1%8F%D0%B9%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B8%D0%BA%D0%B8%D1%85-%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85-%D0%BC%D0%B0%D1%80%D0%B8%D0%BD%D0%B0.jpg?s=612x612&w=0&k=20&c=HLlJVMFptD2vOCG9vCV7G0WKK9XBldW74fJurSBl8vE="
+</div>
+<div style="text-align: center; font-family: Arial, sans-serif; font-weight: bold; color: #000000; margin: 0 auto; border-bottom: 20px solid green;background-color:rgb(198, 226, 185);">
+    <h1 style="text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 36px; color: #000000; margin-top: 30px; margin-bottom: 30px;border-top:20px solid darkgreen;">
+    Какие интересные характеры у этих животных?
+</h1>
+
+    <!-- ЗАГОЛОВОК КОШАЧЬИХ С ЛИНИЯМИ -->
+    <h2 style="font-size: 32px; padding: 15px 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-image: linear-gradient(to right, #000 0px, #000 12px, transparent 12px, transparent 16px, #000 16px, #000 20px, transparent 20px, transparent 24px) 1 repeat; margin-bottom: 30px;">
+        Дикие кошачьи
+    </h2>
+    
+    <!-- СПИСОК КОШАЧЬИХ С ОПИСАНИЕМ ХАРАКТЕРА В ТЕГЕ P -->
+    <ul style="list-style-type: disc; list-style-position: inside; padding: 0; font-size: 24px; margin-bottom: 40px;">
+        <li>Амурский тигр</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Могучий, терпеливый и скрытный хозяин тайги.</p>
+        
+        <li>Африканский лев</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Гордый, величественный и уверенный в своей силе вожак.</p>
+        
+        <li>Ягуар</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Бесстрашный, независимый и великолепный охотник.</p>
+        
+        <li>Леопард</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Хитрый, расчетливый, ловкий и осторожный одиночка.</p>
+        
+        <li>Гепард</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Стремительный, азартный и самый быстрый спринтер.</p>
+        
+        <li>Пума</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Гибкая, незаметная, тихая и очень выносливая.</p>
+        
+        <li>Рысь</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Внимательная, зоркая и молниеносная в прыжке.</p>
+        
+        <li>Манул</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Суровый, нелюдимый, скрытный и очень серьезный кот.</p>
+        
+        <li>Каракал</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Грациозный, прыгучий, дерзкий и чуткий хищник.</p>
+        
+        <li>Сервал</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Изящный, любопытный, активный и длинноногий охотник.</p>
+    </ul>
+
+    <!-- ЗАГОЛОВОК ПСОВЫХ С ЛИНИЯМИ -->
+    <h2 style="font-size: 32px; padding: 15px 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-image: linear-gradient(to right, #000 0px, #000 12px, transparent 12px, transparent 16px, #000 16px, #000 20px, transparent 20px, transparent 24px) 1 repeat; margin-bottom: 30px;">
+        Дикие псовые
+    </h2>
+    
+    <!-- СПИСОК ПСОВЫХ С ОПИСАНИЕМ ХАРАКТЕРА В ТЕГЕ P И ЛИНИЕЙ В САМОМ КОНЦЕ -->
+    <ul style="list-style-type: disc; list-style-position: inside; padding: 0; padding-bottom: 25px; font-size: 24px; border-bottom: 4px solid transparent; border-image: linear-gradient(to right, #000 0px, #000 12px, transparent 12px, transparent 16px, #000 16px, #000 20px, transparent 20px, transparent 24px) 1 repeat;">
+        <li>Волк</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Преданный стае, умный, дисциплинированный и волевой.</p>
+        
+        <li>Лисица</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Находчивая, изобретательная, хитрая и очень гибкая.</p>
+        
+        <li>Шакал</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Адаптивный, шумный, осторожный и очень сообразительный.</p>
+        
+        <li>Койот</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Упрямый, хитрый, выносливый и умеющий выживать везде.</p>
+        
+        <li>Енотовидная собака</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Миролюбивая, спокойная, немного медлительная и пугливая.</p>
+        
+        <li>Гиеновидная собака</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Азартная, общительная, невероятно дружная и слаженная в команде.</p>
+        
+        <li>Динго</li>
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 20px 0;">Дикий, свободолюбивый, независимый и недоверчивый пес.</p>
+        <li>Песец</li>
+        <img style="width:500px; height:500px;" src="https://img.magnific.com/free-vector/set-forest-animal-nice-flat-design_23-2147582224.jpg?semt=ais_hybrid&w=740&q=80">
+        <p style="text-align: center; font-weight: bold; font-size: 18px; color: #333333; margin: 5px 0 5px 0;">Стойкий, отважный, готовый к любым морозам и суровым условиям.</p>
+    </ul>
+
+</div>
+<footer style="background-color:green;border-radius:20px;">
+    <p style="background-color:white;margin:20px;border-bottom:30px solid green;border-top:30px solid green;">Адрес зоопарка: город Грозный, улица хорошая,дом 90</p>
+    <p style="background-color:white;margin:20px;border-bottom:20px solid green;">Номер: 8 (912) 345-67-89</p> 
+</footer>
+</body>
